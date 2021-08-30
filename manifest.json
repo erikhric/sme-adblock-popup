@@ -1,0 +1,15 @@
+{
+"manifest_version": 2,
+    "name": "SME, coexist w adblock",
+    "description": "Hide popup that forces you to disable ",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.sme.sk/*"
+            ],
+            "js": [ "content.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
